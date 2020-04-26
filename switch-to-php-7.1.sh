@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "* Disabling Apache PHP 5.6 module..."
-sudo a2dismod php5.6 > /dev/null
-
 echo "* Disabling Apache PHP 7.0 module..."
 sudo a2dismod php7.0 > /dev/null
 
