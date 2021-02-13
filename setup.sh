@@ -12,6 +12,12 @@ sudo add-apt-repository -y ppa:ondrej/php > /dev/null
 echo "* Refreshing software repositories..."
 sudo apt-get update > /dev/null
 
+echo "* Installing PHP 5.6..."
+sudo apt-get install -y php5.6 php5.6-common php5.6-cli > /dev/null
+
+echo "* Installing PHP 5.6 extensions..."
+sudo apt-get install -y php5.6-gd php5.6-mysql php5.6-sqlite3 php5.6-xsl php5.6-json php5.6-mbstring php5.6-curl php5.6-mcrypt php5.6-xml php5.6-zip php5.6-pgsql > /dev/null
+
 echo "* Installing PHP 7.0..."
 sudo apt-get install -y php7.0 php7.0-common php7.0-cli > /dev/null
 
@@ -41,5 +47,11 @@ sudo apt-get install -y php7.4 php7.4-common php7.4-cli > /dev/null
 
 echo "* Installing PHP 7.4 extensions..."
 sudo apt-get install -y php7.4-bz2 php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-mysql php7.4-sqlite3 php7.4-tidy php7.4-xml php7.4-xsl php7.4-zip php7.4-pgsql > /dev/null
+
+echo "* Installing PHP 8.0..."
+sudo apt-get install -y php8.0 php8.0-common php8.0-cli > /dev/null
+
+echo "* Installing PHP 8.0 extensions..."
+sudo apt-get install -y php8.0-bz2 php8.0-curl php8.0-gd php8.0-json php8.0-mbstring php8.0-mysql php8.0-sqlite3 php8.0-tidy php8.0-xml php8.0-xsl php8.0-zip php8.0-pgsql > /dev/null
 
 echo "* Setup complete. You may now use the 'switch-to-php-*.*.sh' scripts."
